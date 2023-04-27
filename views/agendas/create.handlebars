@@ -1,0 +1,21 @@
+<h1>Criando uma agenda</h1>
+<form action="/agendas/add" method="POST">
+<input type="hidden" name="id" value={{task.id}}>
+  <div class="form-control">
+    <label for="titulo">Título:</label>
+    <input type="text" name="titulo" placeholder="Digite o título">
+  </div>
+  <div class="form-control">
+    <label for="data_inicio">Data inicial:</label>
+    <input type="date" name="data_inicio" placeholder="Data inicial">
+  </div>
+  <div class="form-control">
+    <label for="data_fim">Data final:</label>
+    <input type="date" name="data_fim" placeholder="Data final">
+  </div>
+  <div class="form-control">
+    <label for="descricao">Descrição:</label>
+    <input type="text" name="descricao" placeholder="Digite aqui sua descrição">
+  </div>
+  <input type="submit" value="Criar">
+</form>

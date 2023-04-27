@@ -1,0 +1,21 @@
+<h1>Editando a agenda: {{agenda.titulo}}</h1>
+<form action="/agendas/edit" method="POST">
+  <input type="hidden" name="id" value={{agenda.id}}>
+  <div class="form-control">
+    <label for="titulo">Título:</label>
+    <input type="text" name="titulo" placeholder="Digite o título" value="{{agenda.titulo}}">
+  </div>
+  <div class="form-control">
+    <label for="data_inicio">Data Inicial:</label>
+    <input type="text" name="data_inicio" placeholder="Data inicial" value="{{agenda.data_inicio}}">
+  </div>
+  <div class="form-control">
+    <label for="data_fim">Data Final:</label>
+    <input type="text" name="data_fim" placeholder="Data final" value="{{agenda.data_fim}}">
+  </div>
+  <div class="form-control">
+    <label for="descricao">Descrição:</label>
+    <textarea type="text" name="descricao" placeholder="Digite aqui sua descrição">{{agenda.descricao}}</textarea>
+  </div>
+  <input type="submit" value="Editar">
+</form>
