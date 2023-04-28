@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+/* Estilos padrão para monitores e maiores */
+body {
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para tablets */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para celulares */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para telas maiores que 1200px */
+@media only screen and (min-width: 1201px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 * {
   font-family: 'Noto Sans', sans-serif;
   margin: 0;
